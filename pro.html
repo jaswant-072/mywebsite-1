@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NanoPulse</title>
+    <style>
+        body {
+            width: 794px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .media-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin: 15px 0;
+        }
+        .media-row iframe,
+        .media-row video {
+            width: 380px;
+            height: 250px;
+            border: 1px solid #ccc;
+        }
+        img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1><b>NANO PULSE</b></h1>
+    <p>Nanotechnology innovations for healthcare and energy</p>
+    <hr>
+
+    <h3>Play Music</h3>
+    <!-- Put music file in the same folder as this HTML file -->
+    <audio controls>
+        <source src="C:\Users\jassj\Documents\WT\music wt.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <hr>
+
+    <!-- Removed invalid 'controls' attribute from img; put karunya.jpg in same folder -->
+    <div>
+        <img src="C:\Users\jassj\Downloads\karunya.jpg" alt="Karunya Banner">
+    </div>
+    <hr>
+
+    <!-- Row 1: PDF & Local Video aligned side-by-side -->
+    <div class="media-row">
+        <iframe src="Practicum%202.pdf"></iframe>
+        <video controls>
+            <source src="C:\Users\jassj\Downloads\karunya vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <hr>
+
+    <!-- Row 2: YouTube & Google Maps aligned side-by-side -->
+    <div class="media-row">
+        <iframe src="https://www.youtube.com/embed/OLa8DQkKlyU" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps?q=Coimbatore,Tamil%20Nadu&output=embed"></iframe>
+    </div>
+    <hr>
+
+    <p>© 2026 NanoPulse</p>
+
+</body>
+</html>
